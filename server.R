@@ -18,7 +18,7 @@ shinyServer(function(input, output) {
     })
     
     output$data<-renderDataTable({
-        as.data.table(head(dataset()[,1:5]))
+        as.data.table(head(dataset()[,1:30]))
     })
     
 })
